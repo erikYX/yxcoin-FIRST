@@ -20,6 +20,8 @@ libminiupnpc-dev - UPnP IGD client lightweight library dev
 =======================================================================
 
 a fork of smallchange, https://github.com/bfroemel/smallchange    
+diff - https://github.com/bfroemel/smallchange/commit/947a0fafd8d033f6f0960c4ff0748f76a3d58326   
+
 
 a 'faster' version of Litecoin which also uses scrypt
 as a proof of work scheme and is intended for microtransactions.
