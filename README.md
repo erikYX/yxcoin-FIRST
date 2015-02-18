@@ -1,4 +1,8 @@
-SmallChange (SMC) - a 'faster' version of Litecoin which also uses scrypt
+YXcoin (YXC) - 
+
+a fork of smallchange, https://github.com/bfroemel/smallchange    
+
+a 'faster' version of Litecoin which also uses scrypt
 as a proof of work scheme and is intended for microtransactions.
  - 15 seconds block targets: beat that MinCoin! ;)
  - 42 007 680 total coins
