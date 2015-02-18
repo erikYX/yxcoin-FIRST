@@ -17,6 +17,8 @@ git - git version control system
 qt-sdk - QT-SDK platform  https://qt-project.org/    
 libminiupnpc-dev - UPnP IGD client lightweight library dev   
 
+Ports - 2523 RCP, 2524 P2P 
+
 =======================================================================
 
 a fork of yxcoin, https://github.com/bfroemel/yxcoin    
