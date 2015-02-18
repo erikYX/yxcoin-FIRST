@@ -2,6 +2,22 @@
 
 http://devtome.com/doku.php?id=scrypt_altcoin_cloning_guide     
 
+=======================================================================    
+Installation Linux  
+
+sudo apt-get install   
+sudo apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git qt-sdk libminiupnpc-dev
+
+Libraries & dependencies:   
+libboost-all-dev - Boost C++ Libraries dev   
+libcurl4-openssl-dev - libcurl (OpenSSL flavour)   
+libdb5.1-dev - Berkeley v5.1 Database Libraries   
+libdb5.1++-dev - Berkeley v5.1 Database Libraries runtime   
+qt-sdk - QT-SDK platform  https://qt-project.org/    
+libminiupnpc-dev - UPnP IGD client lightweight library dev   
+
+=======================================================================
+
 a fork of smallchange, https://github.com/bfroemel/smallchange    
 
 a 'faster' version of Litecoin which also uses scrypt
