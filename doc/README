@@ -20,14 +20,14 @@ with each other, with the help of a P2P network to check for double-spending.
 
 Setup
 -----
-You need the Qt4 run-time libraries to run smallchange-qt. On Debian or Ubuntu:
+You need the Qt4 run-time libraries to run yxcoin-qt. On Debian or Ubuntu:
   sudo apt-get install libqtgui4
 
 Unpack the files into a directory and run:
- bin/32/smallchange-qt (GUI, 32-bit)
- bin/32/smallchange (headless, 32-bit)
- bin/64/smallchange-qt (GUI, 64-bit)
- bin/64/smallchange (headless, 64-bit)
+ bin/32/yxcoin-qt (GUI, 32-bit)
+ bin/32/yxcoin (headless, 32-bit)
+ bin/64/yxcoin-qt (GUI, 64-bit)
+ bin/64/yxcoin (headless, 64-bit)
 
 
 See the documentation at the bitcoin wiki:
