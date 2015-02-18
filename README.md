@@ -38,7 +38,7 @@ means be used as a real cryptocurrency. All of the coin parameters
 are chosen arbitrarily or at most with 'fairness' towards everyone in mind.
 
 So actually, this 'new' coin exists for the following reasons:
- - SMC proves that really anyone(!) can start a Litecoin/Bitcoin based currency
+ - YXC proves that really anyone(!) can start a Litecoin/Bitcoin based currency
     (just look at the changes I applied to the original Litecoin source,
      for genesis block generation look at main.cpp)
  - allows me to experiment with coin parameters (in a private network)
