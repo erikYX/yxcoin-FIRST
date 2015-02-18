@@ -3,7 +3,7 @@
 http://devtome.com/doku.php?id=scrypt_altcoin_cloning_guide     
 
 =======================================================================    
-Installation Linux  
+##Installation Linux  
 
 sudo apt-get install   
 sudo apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git qt-sdk libminiupnpc-dev
