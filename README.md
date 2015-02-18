@@ -1,4 +1,4 @@
-#YXcoin (YXC) - 
+##YXcoin (YXC) - 
 
 http://devtome.com/doku.php?id=scrypt_altcoin_cloning_guide     
 
