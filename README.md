@@ -13,6 +13,7 @@ libboost-all-dev - Boost C++ Libraries dev
 libcurl4-openssl-dev - libcurl (OpenSSL flavour)   
 libdb5.1-dev - Berkeley v5.1 Database Libraries   
 libdb5.1++-dev - Berkeley v5.1 Database Libraries runtime   
+git - git version control system   
 qt-sdk - QT-SDK platform  https://qt-project.org/    
 libminiupnpc-dev - UPnP IGD client lightweight library dev   
 
