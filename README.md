@@ -30,6 +30,12 @@ Estimated coins per day = 6624 // 24 * 60 / 5 = 288 blocks * 23 YXC per block
 Pubkey Address prefix = 77  // starts with Y or X  
 
 Images and icons in  /src/qt/res/     
+
+Genesis Block: 
+block.nTime = 1424367050
+block.nNonce = 386763034
+block.GetHash = 22f7c905c1e8e65d6d893d847c41fc67cd1b6381707e2d3ac13132c2ef187e46
+
    
 =======================================================================
 
