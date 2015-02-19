@@ -839,8 +839,8 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 0.35 * 24 * 60 * 60; // YXcoin: 0.35 days
-static const int64 nTargetSpacing = 15; // YXcoin: 15 seconds
+static const int64 nTargetTimespan = 1 * 24 * 60 * 60; // YXcoin: 1 days
+static const int64 nTargetSpacing = 300; // YXcoin: 5 minutes
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 // Thanks: Balthazar for suggesting the following fix
