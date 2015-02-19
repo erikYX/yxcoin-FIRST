@@ -19,6 +19,13 @@ libminiupnpc-dev - UPnP IGD client lightweight library dev
 
 Ports - 2523 RCP, 2524 P2P 
 
+  
+Coin data:   
+Coins per block = 23   
+Block Interval = 300   // 5 minutes   
+Difficulty reset  =  1 * 24 * 60 * 60 // once/day   
+Pubkey Address prefix = 77  // X or Y   
+   
 =======================================================================
 
 a fork of yxcoin, https://github.com/bfroemel/yxcoin    
