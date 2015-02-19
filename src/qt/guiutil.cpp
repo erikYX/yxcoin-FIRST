@@ -128,7 +128,7 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert SmallChange:// to SmallChange:
+    // Convert YXcoin:// to YXcoin:
     //
     //    Cannot handle this later, because yxcoin:// will cause Qt to see the part after // as host,
     //    which will lowercase it (and thus invalidate the address).
@@ -278,12 +278,12 @@ bool ToolTipToRichTextFilter::eventFilter(QObject *obj, QEvent *evt)
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "SmallChange.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "YXcoin.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for SmallChange.lnk
+    // check for YXcoin.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -401,7 +401,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         // Write a yxcoin.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=SmallChange\n";
+        optionFile << "Name=YXcoin\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";
