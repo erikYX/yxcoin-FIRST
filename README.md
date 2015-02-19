@@ -23,9 +23,9 @@ Ports - 2523 RCP, 2524 P2P
 Coin data:   
 Coins per block = 23   
 Block Interval = 300   // 5 minutes   
-Difficulty reset  =  1 * 24 * 60 * 60 // once/day   
-Max Money = 1000000 // 1 million total coins
-Estimated coins per day = 6624 // 24 * 60 / 5 = 288 blocks * 23 YXC per block
+Difficulty reset  =  1 * 24 * 60 * 60 // once/day     
+Max Money = 1000000 // 1 million total coins   
+Estimated coins per day = 6624 // 24 * 60 / 5 = 288 blocks * 23 YXC per block   
 
 Pubkey Address prefix = 77  // starts with Y or X  
 
