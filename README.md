@@ -24,7 +24,12 @@ Coin data:
 Coins per block = 23   
 Block Interval = 300   // 5 minutes   
 Difficulty reset  =  1 * 24 * 60 * 60 // once/day   
-Pubkey Address prefix = 77  // X or Y   
+Max Money = 1000000 // 1 million total coins
+Estimated coins per day = 6624 // 24 * 60 / 5 = 288 blocks * 23 YXC per block
+
+Pubkey Address prefix = 77  // starts with Y or X  
+
+Images and icons in  /src/qt/res/     
    
 =======================================================================
 
