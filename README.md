@@ -8,11 +8,6 @@ http://devtome.com/doku.php?id=scrypt_altcoin_cloning_guide
 sudo apt-get install   
 sudo apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git qt-sdk libminiupnpc-dev
 
-sudo dd if=/dev/zero of=/swapfile bs=64M count=16
-sudo mkswap /swapfile
-sudo swapon /swapfile
-
-
 Libraries & dependencies:   
 libboost-all-dev - Boost C++ Libraries dev   
 libcurl4-openssl-dev - libcurl (OpenSSL flavour)   
@@ -21,6 +16,18 @@ libdb5.1++-dev - Berkeley v5.1 Database Libraries runtime
 git - git version control system   
 qt-sdk - QT-SDK platform  https://qt-project.org/    
 libminiupnpc-dev - UPnP IGD client lightweight library dev   
+
+sudo dd if=/dev/zero of=/swapfile bs=64M count=16   
+sudo mkswap /swapfile   
+sudo swapon /swapfile   
+
+ $ git clone https://github.com/barcoin/barcoin.git
+ cloning in to barcoin
+ $ cd barcoin/src
+ barcoin/src$ make -f makefile.unix (I'm on Linux here).
+ barcoin/src$ strip barcoind
+
+
 
 Ports - 2523 RCP, 2524 P2P 
 
