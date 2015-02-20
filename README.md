@@ -55,7 +55,7 @@ CBlock(hash=9a3149370ea97c017b3d, PoW=00000c1a342387447aea, ver=1, hashPrevBlock
   
   
 
-qt Wallet - yxcoin/ qmake+qt4  
+qt Wallet - yxcoin/ qmake-qt4  
                     make   
    
 =======================================================================
