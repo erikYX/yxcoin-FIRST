@@ -8,6 +8,11 @@ http://devtome.com/doku.php?id=scrypt_altcoin_cloning_guide
 sudo apt-get install   
 sudo apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git qt-sdk libminiupnpc-dev
 
+sudo dd if=/dev/zero of=/swapfile bs=64M count=16
+sudo mkswap /swapfile
+sudo swapon /swapfile
+
+
 Libraries & dependencies:   
 libboost-all-dev - Boost C++ Libraries dev   
 libcurl4-openssl-dev - libcurl (OpenSSL flavour)   
