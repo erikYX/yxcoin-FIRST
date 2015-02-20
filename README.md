@@ -44,10 +44,19 @@ Pubkey Address prefix = 77  // starts with Y or X
 Images and icons in  /src/qt/res/     
 
 Genesis Block: 
-block.nTime = 1424367050
-block.nNonce = 386763034
-block.GetHash = 22f7c905c1e8e65d6d893d847c41fc67cd1b6381707e2d3ac13132c2ef187e46
+block.nTime = 1424404186
+block.nNonce = 2086780778
+block.GetHash = 9a3149370ea97c017b3d8853abadd614c28d59a96084efb3f97c25178cd943a1
+CBlock(hash=9a3149370ea97c017b3d, PoW=00000c1a342387447aea, ver=1, hashPrevBlock=00000000000000000000, hashMerkleRoot=f9669a1832, nTime=1424404186, nBits=1e0ffff0, nNonce=2086780778, vtx=1)
+  CTransaction(hash=f9669a1832, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, -1), coinbase 04ffff001d010446322e31392e323031352d56616e696c6c61204963652072656c6561736564206166746572206265696e67206368617267656420696e20466c6f7269646120627572676c617279)
+    CTxOut(error)
+  vMerkleTree: f9669a1832
+  
+  
 
+qt Wallet - yxcoin/ qmake+qt4  
+                    make   
    
 =======================================================================
 
