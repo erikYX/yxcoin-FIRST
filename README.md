@@ -25,20 +25,27 @@ $ sudo swapon /swapfile
  $ git clone https://github.com/erikYX/yxcoin.git
  $ cd yxcoin/src
  yxcoin/src$ make -f makefile.unix
- yxcoin/src$ strip yxcoin
- $ cp -r yxcoin /usr/local/bin/yxcoin
+ yxcoin/src$ stryxcoin/srcip yxcoin
+ yxcoin/src$ cp -r yxcoin /usr/local/bin/yxcoin
  
+Create configuration file
+yxcoin/src$ cd /home/USER
+make yxcoin.conf and enter rpc login
+
  
- $ yxcoin excryptwallet <passphrase>
+
  
  Commands:
  $ yxcoin & - start yxcoin server daemon
  $ yxcoin getinfo - basic info JSON array
+ $ yxcoin excryptwallet <passphrase>
  $ yxcoin listtransactions - show transactions to wallet
  $ yxcoin setgenerate true 1 - start mining
  $ yxcoin getmininginfo - mining status
  $ yxcoind setgenerate false - stop mining
  $ yxcoin stop - stop server daemon
+ 
+ $ sudo tail -f /home/USER/.yxcoin/debug.log - watch yxcoin network activity
  
  
  
@@ -67,33 +74,9 @@ CBlock(hash=9a3149370ea97c017b3d, PoW=00000c1a342387447aea, ver=1, hashPrevBlock
   vMerkleTree: f9669a1832
   
   
-=======================================================================
-
-a fork of yxcoin, https://github.com/bfroemel/yxcoin    
+    
 diff - https://github.com/bfroemel/yxcoin/commit/947a0fafd8d033f6f0960c4ff0748f76a3d58326   
 
 
-a 'faster' version of Litecoin which also uses scrypt
-as a proof of work scheme and is intended for microtransactions.
- - 15 seconds block targets: beat that MinCoin! ;)
- - 42 007 680 total coins
- - no subsidy within the first 3 days and after approximately 5 years;
-    in between: 4 coins per generated block
- - difficulty retargets every 0.35 days
- - currently peers are looked up over IRC only
- - currently no block checkpoints are in the code (but could be easily
-   added)
-Other than that, this coin is exactly like Litecoin and should by no
-means be used as a real cryptocurrency. All of the coin parameters
-are chosen arbitrarily or at most with 'fairness' towards everyone in mind.
 
-So actually, this 'new' coin exists for the following reasons:
- - YXC proves that really anyone(!) can start a Litecoin/Bitcoin based currency
-    (just look at the changes I applied to the original Litecoin source,
-     for genesis block generation look at main.cpp)
- - allows me to experiment with coin parameters (in a private network)
-
-Finally, I only tested the command line server/tool 'yxcoin' for the
-first 30 blocks. Credits go to the original authors/communities that
-created Bitcoin and Litecoin.
 
