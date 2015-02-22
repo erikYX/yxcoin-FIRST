@@ -21,7 +21,7 @@ s sudo dd if=/dev/zero of=/swapfile bs=64M count=16
 $ sudo mkswap /swapfile   
 $ sudo swapon /swapfile   
 
-
+ $ apt-get install git
  $ git clone https://github.com/erikYX/yxcoin.git
  $ cd yxcoin/src
  yxcoin/src$ make -f makefile.unix
