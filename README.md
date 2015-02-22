@@ -5,8 +5,8 @@ http://devtome.com/doku.php?id=scrypt_altcoin_cloning_guide
 =======================================================================    
 ##Installation Linux  
 
-sudo apt-get install   
-sudo apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git qt-sdk libminiupnpc-dev
+$ sudo apt-get install   
+$ sudo apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git qt-sdk libminiupnpc-dev
 
 Libraries & dependencies:   
 libboost-all-dev - Boost C++ Libraries dev   
@@ -17,18 +17,31 @@ git - git version control system
 qt-sdk - QT-SDK platform  https://qt-project.org/    
 libminiupnpc-dev - UPnP IGD client lightweight library dev   
 
-sudo dd if=/dev/zero of=/swapfile bs=64M count=16   
-sudo mkswap /swapfile   
-sudo swapon /swapfile   
-
- $ git clone https://github.com/barcoin/barcoin.git
- cloning in to barcoin
- $ cd barcoin/src
- barcoin/src$ make -f makefile.unix (I'm on Linux here).
- barcoin/src$ strip barcoind
+s sudo dd if=/dev/zero of=/swapfile bs=64M count=16   
+$ sudo mkswap /swapfile   
+$ sudo swapon /swapfile   
 
 
-
+ $ git clone https://github.com/erikYX/yxcoin.git
+ $ cd yxcoin/src
+ yxcoin/src$ make -f makefile.unix
+ yxcoin/src$ strip yxcoin
+ $ cp -r yxcoin /usr/local/bin/yxcoin
+ 
+ 
+ $ yxcoin excryptwallet <passphrase>
+ 
+ Commands:
+ $ yxcoin & - start yxcoin server daemon
+ $ yxcoin getinfo - basic info JSON array
+ $ yxcoin listtransactions - show transactions to wallet
+ $ yxcoin setgenerate true 1 - start mining
+ $ yxcoin getmininginfo - mining status
+ $ yxcoind setgenerate false - stop mining
+ $ yxcoin stop - stop server daemon
+ 
+ 
+ 
 Ports - 2523 RCP, 2524 P2P 
 
   
@@ -54,10 +67,6 @@ CBlock(hash=9a3149370ea97c017b3d, PoW=00000c1a342387447aea, ver=1, hashPrevBlock
   vMerkleTree: f9669a1832
   
   
-
-qt Wallet - yxcoin/ qmake-qt4  
-                    make   
-   
 =======================================================================
 
 a fork of yxcoin, https://github.com/bfroemel/yxcoin    
