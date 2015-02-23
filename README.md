@@ -15,23 +15,23 @@ git - git version control system
 qt-sdk - QT-SDK platform  https://qt-project.org/    
 libminiupnpc-dev - UPnP IGD client lightweight library dev   
 
-s sudo dd if=/dev/zero of=/swapfile bs=64M count=16   
+s sudo dd if=/dev/zero of=/swapfile bs=64M count=16    
 $ sudo mkswap /swapfile   
 $ sudo swapon /swapfile   
-
- $ sudo apt-get install git
- $ cd /usr/local/src
- $ git clone https://github.com/erikYX/yxcoin.git
- $ cd yxcoin/src
- yxcoin/src$ make -f makefile.unix
- yxcoin/src$ stryxcoin/srcip yxcoin
- yxcoin/src$ cp -r yxcoin /usr/local/bin/yxcoin
- 
- $ yxcoin & - start yxcoin server daemon   
- 
-It will prompt to xreate configuration file:   
-
-yxcoin/src$ cd /home/USER/.yxcoin      
+  
+ $ sudo apt-get install git    
+ $ cd /usr/local/src    
+ $ git clone https://github.com/erikYX/yxcoin.git    
+ $ cd yxcoin/src    
+ yxcoin/src$ make -f makefile.unix    
+ yxcoin/src$ stryxcoin/srcip yxcoin    
+ yxcoin/src$ cp -r yxcoin /usr/local/bin/yxcoin    
+    
+ $ yxcoin & - start yxcoin server daemon     
+    
+It will prompt to xreate configuration file:    
+   
+yxcoin/src$ cd /home/USER/.yxcoin       
 /home/USER/.yxcoin$ nano yxcoin.conf  
 
 Enter following: 
@@ -74,15 +74,15 @@ Pubkey Address prefix = 77  // starts with Y or X
 
 Images and icons in  /src/qt/res/     
 
-Genesis Block: 
-block.nTime = 1424404186
-block.nNonce = 2086780778
-block.GetHash = 9a3149370ea97c017b3d8853abadd614c28d59a96084efb3f97c25178cd943a1
-CBlock(hash=9a3149370ea97c017b3d, PoW=00000c1a342387447aea, ver=1, hashPrevBlock=00000000000000000000, hashMerkleRoot=f9669a1832, nTime=1424404186, nBits=1e0ffff0, nNonce=2086780778, vtx=1)
-  CTransaction(hash=f9669a1832, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-    CTxIn(COutPoint(0000000000, -1), coinbase 04ffff001d010446322e31392e323031352d56616e696c6c61204963652072656c6561736564206166746572206265696e67206368617267656420696e20466c6f7269646120627572676c617279)
-    CTxOut(error)
-  vMerkleTree: f9669a1832
+Genesis Block:    
+block.nTime = 1424404186   
+block.nNonce = 2086780778    
+block.GetHash = 9a3149370ea97c017b3d8853abadd614c28d59a96084efb3f97c25178cd943a1   
+CBlock(hash=9a3149370ea97c017b3d, PoW=00000c1a342387447aea, ver=1, hashPrevBlock=00000000000000000000,    hashMerkleRoot=f9669a1832, nTime=1424404186, nBits=1e0ffff0, nNonce=2086780778, vtx=1)    
+  CTransaction(hash=f9669a1832, ver=1, vin.size=1, vout.size=1, nLockTime=0)   
+    CTxIn(COutPoint(0000000000, -1), coinbase    04ffff001d010446322e31392e323031352d56616e696c6c61204963652072656c6561736564206166746572206265696e67206368617267656420696e20466c6f7269646120627572676c617279)   
+    CTxOut(error)   
+  vMerkleTree: f9669a1832   
   
   
     
