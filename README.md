@@ -1,9 +1,7 @@
 ##YXcoin (YXC) - 
 
-http://devtome.com/doku.php?id=scrypt_altcoin_cloning_guide     
-
 =======================================================================    
-##Installation Linux  
+##Installation Linux (Ubuntu, Debian)
 
 $ sudo apt-get install   
 $ sudo apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git qt-sdk libminiupnpc-dev
@@ -21,38 +19,51 @@ s sudo dd if=/dev/zero of=/swapfile bs=64M count=16
 $ sudo mkswap /swapfile   
 $ sudo swapon /swapfile   
 
- $ apt-get install git
+ $ sudo apt-get install git
+ $ cd /usr/local/src
  $ git clone https://github.com/erikYX/yxcoin.git
  $ cd yxcoin/src
  yxcoin/src$ make -f makefile.unix
  yxcoin/src$ stryxcoin/srcip yxcoin
  yxcoin/src$ cp -r yxcoin /usr/local/bin/yxcoin
  
-Create configuration file
-yxcoin/src$ cd /home/USER
-make yxcoin.conf and enter rpc login
+ $ yxcoin & - start yxcoin server daemon   
+ 
+It will prompt to xreate configuration file:   
 
- 
+yxcoin/src$ cd /home/USER/.yxcoin      
+/home/USER/.yxcoin$ nano yxcoin.conf  
 
- 
- Commands:
- $ yxcoin & - start yxcoin server daemon
- $ yxcoin getinfo - basic info JSON array
- $ yxcoin excryptwallet <passphrase>
- $ yxcoin listtransactions - show transactions to wallet
- $ yxcoin setgenerate true 1 - start mining
- $ yxcoin getmininginfo - mining status
- $ yxcoind setgenerate false - stop mining
- $ yxcoin stop - stop server daemon
- 
- $ sudo tail -f /home/USER/.yxcoin/debug.log - watch yxcoin network activity
- 
- 
- 
-Ports - 2523 RCP, 2524 P2P 
+Enter following: 
+rpcuser=yxcoinrpc   
+rpcpassword=Av6VRZUMruN7cn6dEHAGvGokAYTpKAwxtBrP7BmQPKbu   
+   
+server=1   
+listen=1   
+daemon=1   
+rpcallowip=localhost   
+   
+addnode=104.236.7.110   
+addnode=107.170.254.130    
 
+
+ Commands:   
+ $ yxcoin & - start yxcoin server daemon   
+ $ yxcoin getinfo - basic info JSON array   
+ $ yxcoin excryptwallet <passphrase>   
+ $ yxcoin listtransactions - show transactions to wallet   
+ $ yxcoin setgenerate true 1 - start mining   
+ $ yxcoin getmininginfo - mining status   
+ $ yxcoind setgenerate false - stop mining   
+ $ yxcoin stop - stop server daemon   
+ 
+ $ sudo tail -f /home/USER/.yxcoin/debug.log - watch yxcoin network activity   
+ 
+ 
+ 
+Ports - 2523 RCP, 2524 P2P   
   
-Coin data:   
+Coin data:    
 Coins per block = 23   
 Block Interval = 300   // 5 minutes   
 Difficulty reset  =  1 * 24 * 60 * 60 // once/day     
