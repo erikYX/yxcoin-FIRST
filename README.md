@@ -29,14 +29,14 @@ $ sudo swapon /swapfile
     
  $ yxcoin & - start yxcoin server daemon     
     
-It will prompt to xreate configuration file:    
+First time run, it will prompt to create configuration file yxcoin.conf with a suggested password.  
    
 yxcoin/src$ cd /home/USER/.yxcoin       
 /home/USER/.yxcoin$ nano yxcoin.conf  
 
-Enter following: 
-rpcuser=yxcoinrpc   
-rpcpassword=Av6VRZUMruN7cn6dEHAGvGokAYTpKAwxtBrP7BmQPKbu   
+Enter following:   
+rpcuser=<USER>     
+rpcpassword=<password>   
    
 server=1   
 listen=1   
