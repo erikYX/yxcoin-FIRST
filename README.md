@@ -1,4 +1,4 @@
-##YXcoin (YXC) - 
+##YXcoin - altcoin for Attention Based Currency 
 
 =======================================================================    
 ##Installation Linux (Ubuntu, Debian)
@@ -35,16 +35,13 @@ yxcoin/src$ cd /home/USER/.yxcoin
 /home/USER/.yxcoin$ nano yxcoin.conf  
 
 Enter following:   
-rpcuser=<USER>     
-rpcpassword=<password>   
+rpcuser=USER     
+rpcpassword=password   
    
 server=1   
 listen=1   
 daemon=1   
 rpcallowip=localhost   
-   
-addnode=104.236.7.110   
-addnode=107.170.254.130    
 
 
  Commands:   
@@ -59,9 +56,6 @@ addnode=107.170.254.130
  
  $ sudo tail -f /home/USER/.yxcoin/debug.log - watch yxcoin network activity   
  
- 
- 
-Ports - 2523 RCP, 2524 P2P   
   
 Coin data:    
 Coins per block = 23   
@@ -84,9 +78,6 @@ CBlock(hash=9a3149370ea97c017b3d, PoW=00000c1a342387447aea, ver=1, hashPrevBlock
     CTxOut(error)   
   vMerkleTree: f9669a1832   
   
-  
-    
-diff - https://github.com/bfroemel/yxcoin/commit/947a0fafd8d033f6f0960c4ff0748f76a3d58326   
 
 
 
