@@ -21,7 +21,7 @@ $ sudo swapon /swapfile
   
  $ sudo apt-get install git    
  $ cd /usr/local/src    
- $ git clone https://github.com/erikYX/yxcoin.git    
+ $ git clone https://github.com/erikYX/yxcoin-FIRST.git  
  $ cd yxcoin/src    
  yxcoin/src$ make -f makefile.unix    
  yxcoin/src$ stryxcoin/srcip yxcoin    
