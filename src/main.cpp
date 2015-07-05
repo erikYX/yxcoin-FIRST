@@ -842,7 +842,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 // ORIGINAL
 // static const int64 nTargetTimespan = 1 * 24 * 60 * 60; // YXcoin: 1 days
 // static const int64 nTargetSpacing = 300; // YXcoin: 5 minutes
-static const int64 nTargetTimespan = 60; // 1 minute 
+static const int64 nTargetTimespan = 60 * 60; // 1 hour 
 static const int64 nTargetSpacing = 60; // 1 minute
 
 
